@@ -1,3 +1,6 @@
-export { default as Code } from './Code';
-export { default as HighlightedCode } from './HighlightedCode';
-export { default } from './Code';
+import Code from './Code';
+import HighlightedCode from './HighlightedCode';
+import * as styled from './styled';
+
+export { Code, HighlightedCode, styled };
+export default Code;

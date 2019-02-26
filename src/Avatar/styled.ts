@@ -11,7 +11,7 @@ const circleProperties = css`
   }
 `;
 
-const fitProperties = (props: any) => {
+export const fitProperties = (props: any) => {
   if (!props.fit) return null;
   if (props.fit === 'contain') {
     return css`
@@ -44,7 +44,7 @@ const fitProperties = (props: any) => {
   return null;
 };
 
-const sizeProperties: any = {
+export const sizeProperties: any = {
   xsmall: css`
     & {
       font-size: 8px;
@@ -103,7 +103,7 @@ export const AvatarCircle = styled(Box)<AvatarProps & { styledSize: any }>`
   ${theme('fannypack.Avatar.Circle.base')};
 `;
 
-const AvatarImage = styled(_Avatar)<AvatarProps & { styledSize: any }>`
+export const AvatarImage = styled(_Avatar)<AvatarProps & { styledSize: any }>`
   font-size: 24px;
   height: ${(props: any) => (typeof props.styledSize === 'number' ? `${props.styledSize}px` : '60px')};
   width: ${(props: any) => (typeof props.styledSize === 'number' ? `${props.styledSize}px` : '60px')};

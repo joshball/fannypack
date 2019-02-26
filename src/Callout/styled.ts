@@ -9,7 +9,7 @@ import { CalloutProps } from './Callout';
 import { CalloutCloseProps } from './CalloutClose';
 import Icon, { IconProps } from '../Icon/Icon';
 
-const getTintAttributes = (props: any) => {
+export const getTintAttributes = (props: any) => {
   const { type, hasTint } = props;
 
   if (!hasTint || !type) {
@@ -24,16 +24,6 @@ const getTintAttributes = (props: any) => {
     ${theme('fannypack.Callout.tint')};
   `;
 };
-
-export default styled(CardCard)<CalloutProps>`
-  position: relative;
-
-  ${getTintAttributes};
-
-  & {
-    ${theme('fannypack.Callout.base')};
-  }
-`;
 
 export const CalloutClose = styled(Button)<CalloutCloseProps>`
   position: absolute;
@@ -88,3 +78,15 @@ export const CalloutIcon = styled(Icon)<IconProps>`
     ${theme('fannypack.Callout.Icon.base')};
   }
 `;
+
+export const Callout = styled(CardCard)<CalloutProps>`
+  position: relative;
+
+  ${getTintAttributes};
+
+  & {
+    ${theme('fannypack.Callout.base')};
+  }
+`;
+
+export default Callout;

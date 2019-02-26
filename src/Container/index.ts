@@ -1,2 +1,5 @@
-export { default as Container } from './Container';
-export { default } from './Container';
+import Container from './Container';
+import * as styled from './styled';
+
+export { Container, styled };
+export default Container;

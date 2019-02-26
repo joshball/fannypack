@@ -1,2 +1,6 @@
-export { default } from './Callout';
-export { default as Callout } from './Callout';
+import Callout from './Callout';
+import CalloutClose from './CalloutClose';
+import * as styled from './styled';
+
+export { Callout, CalloutClose, styled };
+export default Callout;

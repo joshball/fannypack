@@ -1,3 +1,6 @@
-export { default as Checkbox } from './Checkbox';
-export { default as CheckboxField } from './CheckboxField';
-export { default } from './Checkbox';
+import Checkbox from './Checkbox';
+import CheckboxField from './CheckboxField';
+import * as styled from './styled';
+
+export { Checkbox, CheckboxField, styled };
+export default Checkbox;

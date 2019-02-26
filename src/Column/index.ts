@@ -1,2 +1,5 @@
-export { default as Column } from './Column';
-export { default } from './Column';
+import Column from './Column';
+import * as styled from './styled';
+
+export { Column, styled };
+export default Column;

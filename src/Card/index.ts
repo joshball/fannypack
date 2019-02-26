@@ -1,7 +1,10 @@
-export { default } from './Card';
-export { default as Card } from './Card';
-export { default as CardCard } from './CardCard';
-export { default as CardContent } from './CardContent';
-export { default as CardFooter } from './CardFooter';
-export { default as CardHeader } from './CardHeader';
-export { default as CardTitle } from './CardTitle';
+import Card from './Card';
+import CardCard from './CardCard';
+import CardContent from './CardContent';
+import CardFooter from './CardFooter';
+import CardHeader from './CardHeader';
+import CardTitle from './CardTitle';
+import * as styled from './styled';
+
+export { Card, CardContent, CardFooter, CardHeader, CardTitle, styled };
+export default Card;

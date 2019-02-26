@@ -45,7 +45,7 @@ export const AlertClose = styled(Button)<AlertCloseProps>`
   ${theme('fannypack.Alert.Close.base')};
 `;
 
-const tintAttributes = css<AlertProps>`
+export const tintAttributes = css<AlertProps>`
   background-color: ${props => props.type && palette(`${props.type}Tint`)(props)};
   border-top-width: 0;
   border-right-width: 0;
@@ -55,7 +55,7 @@ const tintAttributes = css<AlertProps>`
   ${theme('fannypack.Alert.tint')};
 `;
 
-export default styled(Box)<AlertProps>`
+export const Alert = styled(Box)<AlertProps>`
   background-color: white;
   border: 1px solid ${palette('white800')};
   border-left: 4px solid ${props => props.type && palette(props.type)(props)};
@@ -70,3 +70,5 @@ export default styled(Box)<AlertProps>`
     ${theme('fannypack.Alert.base')};
   }
 `;
+
+export default Alert;
